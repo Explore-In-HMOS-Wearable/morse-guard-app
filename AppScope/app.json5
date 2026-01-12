@@ -1,6 +1,6 @@
 {
   "app": {
-	"bundleName": "com.hmosdemos.morseguardapp",
+	"bundleName": "com.hmosdemos.wearable.morse_guard_app",
 	"vendor": "hmosdemos",
 	"versionCode": 1000000,
 	"versionName": "1.0.0",

@@ -17,12 +17,16 @@ class PermissionsUtil {
     for (const p of list) {
       try {
         const st = await atManager.checkAccessToken(tokenId, p);
-        if (st !== abilityAccessCtrl.GrantStatus.PERMISSION_GRANTED) need.push(p);
+        if (st !== abilityAccessCtrl.GrantStatus.PERMISSION_GRANTED) {
+          need.push(p);
+        }
       } catch {
         need.push(p);
       }
     }
-    if (need.length === 0) return true;
+    if (need.length === 0) {
+      return true;
+    }
 
     try {
       const res: PermissionRequestResult = await atManager.requestPermissionsFromUser(ctx, need);

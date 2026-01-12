@@ -3,7 +3,6 @@ export struct DotDashPad {
   @Prop onDot!: () => void;
   @Prop onDash!: () => void;
   @Prop longPressMs: number = 320;
-
   private pressStart: number = 0;
 
   build(): void {
@@ -18,10 +17,14 @@ export struct DotDashPad {
             this.pressStart = Date.now();
           } else if (e.type === TouchType.Up) {
             const elapsed: number = Date.now() - this.pressStart;
-            if (elapsed < this.longPressMs) this.onDot(); else this.onDash();
+            if (elapsed < this.longPressMs) {
+              this.onDot()
+            } else {
+              this.onDash();
+            }
           }
         })
-      Text('Kısa bas = •    Uzun bas = —')
+      Text('Press short = •    Press long = —')
         .fontSize(12)
         .opacity(0.8)
         .textAlign(TextAlign.Center)

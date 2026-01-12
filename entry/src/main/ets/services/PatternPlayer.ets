@@ -13,13 +13,21 @@ export class PatternPlayer {
 
 
   async play(pattern: string): Promise<void> {
-    if (!pattern) return;
+    if (!pattern) {
+      return
+    }
+    ;
     const parts = pattern.split('');
     for (let i = 0; i < parts.length; i++) {
       const p = parts[i];
-      if (p === '.') await this.h.vibrate(this.DOT);
-      else if (p === '-') await this.h.vibrate(this.DASH);
-      if (i < parts.length - 1) await this.h.gap(this.INTRA_GAP);
+      if (p === '.') {
+        await this.h.vibrate(this.DOT);
+      } else if (p === '-') {
+        await this.h.vibrate(this.DASH);
+      }
+      if (i < parts.length - 1) {
+        await this.h.gap(this.INTRA_GAP);
+      }
     }
     await this.h.gap(this.LETTER_GAP);
   }

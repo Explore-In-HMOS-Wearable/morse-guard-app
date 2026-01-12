@@ -7,10 +7,10 @@ MorseGuard is a HarmonyOS-based wearable game designed for Huawei Watch 5.   Pla
 # Preview
 
 <div>
-  <img src="screenshots/ss1.png" width="24%" />
-  <img src="screenshots/ss2.png" width="24%" />
-  <img src="screenshots/ss4.png" width="24%" />
-  <img src="screenshots/ss3.png" width="24%" />
+<img src="screenshots/ss1.png" width="24%" />
+<img src="screenshots/ss2.png" width="24%" />
+<img src="screenshots/ss4.png" width="24%" />
+<img src="screenshots/ss3.png" width="24%" />
 </div>
 
 
@@ -24,6 +24,7 @@ MorseGuard is a HarmonyOS-based wearable game designed for Huawei Watch 5.   Pla
 # Technology
 
 ## Stack
+
 **Languages**: ArkTS  
 **Framework**: HarmonyOS SDK 5.1.0(16)
 **Tools**: DevEco Studio Version 5.1.0.842
@@ -33,13 +34,12 @@ MorseGuard is a HarmonyOS-based wearable game designed for Huawei Watch 5.   Pla
   - AbilityKit & Router (page navigation)  
   - PromptAction (toast messages)  
   
-  ## Required Permissions
+## Required Permissions
   - `ohos.permission.ACCELEROMETER`  
   - `ohos.permission.ACTIVITY_MOTION`   
   - `ohos.permission.GYROSCOPE`
   - `ohos.permission.READ_HEALTH_DATA`
 
-<br/>
 
 # Directory Structure
 ```
@@ -56,7 +56,6 @@ MorseGuardApp/
 │ └── DotDashPad.ets              # Optional practice pad for dot/dash input
 
 ```
-<br/>
 
 
 # Constraints and Restrictions
@@ -65,9 +64,11 @@ MorseGuardApp/
 - Huawei Watch 5
 
 
-## License
-**MorseGuard** is distributed under the terms of the **MIT License**.  
-See the [LICENCE](/LICENCE) file for more information.
+# License
+
+**MorseGuard** is distributed under the terms of the **MIT License**.
+
+• See the [LICENSE](LICENSE) for more information
 
 
 
